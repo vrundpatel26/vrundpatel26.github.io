@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-people-roof" style="color: #100f0f;"></i> Harmony Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More & About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="blog.html">News</a></li>
+                        <li><a class="dropdown-item" href="events.html">Events</a></li>
+                        <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                        <li><a class="dropdown-item" href="services.html">Services</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="team.html">Team</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a id="careers-link" class="nav-link">Careers</a>
+                </li>
+                <li id="login" class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="api.html">API</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#careers-link').attr('href', 'careers.html');
+    });
+</script>
+</body>
+</html>

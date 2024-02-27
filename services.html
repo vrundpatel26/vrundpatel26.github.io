@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/style.css">
+
+</head>
+
+<body>
+<section class="body-section">
+    <header>
+
+    </header>
+
+<main class="container mt-5 main-content">
+    <h3>Our Services</h3>
+
+    <div class="services-container">
+        <!-- Service 1: Counselling -->
+        <div class="service">
+            <img class="service-img" src="bgContent/image1.jpg" alt="Counselling">
+            <h2>Counselling</h2>
+            <p>Providing professional counselling services to support individuals in their mental and emotional well-being.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#counsellingModal">
+                Learn More
+            </button>
+        </div>
+
+        <!-- Service 2: IT Service Desk -->
+        <div class="service">
+            <img class="service-img" src="bgContent/image3.jpg" alt="IT Service Desk">
+            <h2>IT Service Desk</h2>
+            <p>Offering comprehensive IT support to ensure smooth operations and technical assistance for our community members.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#itServiceDeskModal">
+                Learn More
+            </button>
+        </div>
+
+        <!-- Service 3: Fitness -->
+        <div class="service">
+            <img class="service-img" src="bgContent/image2.jpg" alt="Fitness">
+            <h2>Fitness</h2>
+            <p>Promoting a healthy lifestyle through fitness programs, workout sessions, and wellness activities for our community.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fitnessModal">
+                Learn More
+            </button>
+        </div>
+    </div>
+</main>
+
+<!-- Modals for Services -->
+<!-- Service 1: Counselling Modal -->
+<div class="modal fade" id="counsellingModal" tabindex="-1" role="dialog"
+     aria-labelledby="counsellingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-dark">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="counsellingModalLabel">Counselling Service</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Discover the benefits of our professional counselling services that prioritize your mental and
+                    emotional well-being. Our experienced counselors are here to provide support and guidance
+                    tailored to your unique needs. Professional counselors help clients identify goals and potential solutions to problems which cause emotional turmoil; seek to improve communication and coping skills; strengthen self-esteem; and promote behavior change and optimal mental health.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Service 2: IT Service Desk Modal -->
+<div class="modal fade" id="itServiceDeskModal" tabindex="-1" role="dialog"
+     aria-labelledby="itServiceDeskModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-dark">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="itServiceDeskModalLabel">IT Service Desk</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Experience reliable IT support with our dedicated Service Desk. From troubleshooting technical
+                    issues to providing software assistance, we ensure a seamless technology experience for our
+                    community members. The main objective of IT support is to maintain IT computer systems and networks across the organization, resolving technical problems while managing end-user requests, such as installing software or configuring hardware.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Service 3: Fitness Modal -->
+<div class="modal fade" id="fitnessModal" tabindex="-1" role="dialog"
+     aria-labelledby="fitnessModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-dark">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="fitnessModalLabel">Fitness Service</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Promoting a healthy lifestyle through fitness programs, workout sessions, and wellness activities
+                    for our community. Our fitness programs are designed to cater to all fitness levels and focus on
+                    holistic well-being. Regular physical activity is one of the most important things you can do for your health. Being physically active can improve your brain health, help manage weight, reduce the risk of disease.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div id="footerContainer"></div>
+</footer>
+</section>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script/main.js"></script>
+</body>
+
+</html>

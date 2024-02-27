@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Team</title>
+
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/style.css">
+</head>
+
+<body id="team-members">
+<section class="body-section">
+    <header>
+
+</header>
+
+<div class="team-container">
+    <!-- Team Members -->
+    <div class="team-member">
+        <img src="./bgContent/member1.JPG" alt="Member 1: Vrund Patel">
+        <h3>Vrund Patel</h3>
+        <p>Bootstrap and Scripting</p>
+        <a href="#" class="more-details" data-bs-toggle="modal" data-bs-target="#vrundModal">More Details</a>
+    </div>
+
+    <div class="team-member">
+        <img src="./bgContent/member2.jpg" alt="Member 2: Jaivik Chauhan">
+        <h3>Jaivik Chauhan</h3>
+        <p>Styling and Layout</p>
+        <a href="#" class="more-details" data-bs-toggle="modal" data-bs-target="#jaivikModal">More Details</a>
+    </div>
+
+    <div class="team-member">
+        <img src="./bgContent/member3.jpg" alt="Member 3: Raj Patel">
+        <h3>Raj Patel</h3>
+        <p>Modals and Content</p>
+        <a href="#" class="more-details" data-bs-toggle="modal" data-bs-target="#rajModal">More Details</a>
+    </div>
+</div>
+
+<!-- Modals for Team Members -->
+<!-- Vrund Patel Modal -->
+<div class="modal fade" id="vrundModal" tabindex="-1" role="dialog" aria-labelledby="vrundModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content text-dark">
+            <div class="modal-header">
+                <h5 class="modal-title" id="vrundModalLabel">Vrund Patel - More Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <p>My name is Vrund Patel. I specialize in Bootstrap and Scripting. I graduated from Durham College. With a passion for front-end development, I enjoy creating responsive and user-friendly interfaces. In my free time, I explore new technologies and contribute to open-source projects.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Jaivik Chauhan Modal -->
+<div class="modal fade" id="jaivikModal" tabindex="-1" role="dialog" aria-labelledby="jaivikModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content text-dark"> <!-- Set text color to black -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="jaivikModalLabel">Jaivik Chauhan - More Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <p>My name is Jaivik Chauhan. I am a designer specializing in styling for JavaScript and code. With a keen eye for aesthetics and functionality, I strive to create visually appealing and intuitive user interfaces. Outside of work, I enjoy exploring graphic design and experimenting with new design trends.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Raj Patel Modal -->
+<div class="modal fade" id="rajModal" tabindex="-1" role="dialog" aria-labelledby="rajModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content text-dark"> <!-- Set text color to black -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="rajModalLabel">Raj Patel - More Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <p>My name is Raj Patel. I specialize in creating modals and managing content for web development. With a focus on enhancing user interactions, I contribute to creating seamless and engaging web experiences. Beyond coding, I have a passion for photography and love capturing moments during my travels.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div id="footerContainer"></div>
+</footer>
+
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./script/main.js"></script>
+
+</section>
+</body>
+
+</html>

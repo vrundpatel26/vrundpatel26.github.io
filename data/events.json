@@ -1,0 +1,26 @@
+{
+  "events":
+          [
+            {
+              "id": 1,
+              "name": "Community Cleanup",
+              "date": "2024-03-15",
+              "location": "Central Park",
+              "description": "Join us for a community cleanup event to keep our park beautiful."
+            },
+            {
+              "id": 2,
+              "name": "Charity Bake Sale",
+              "date": "2024-03-22",
+              "location": "Community Center",
+              "description": "Support our local charity by buying some delicious homemade treats."
+            },
+            {
+              "id": 3,
+              "name": "Marathon Fundraiser",
+              "date": "2024-03-29",
+              "location": "Community ground",
+              "description": "Take a part in raising funds for the needy."
+            }
+          ]
+}

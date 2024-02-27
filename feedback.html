@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/style.css">
+
+</head>
+<body class="tosBody">
+<section class="body-section">
+    <header>
+    </header>
+
+    <div id="messageBox">
+
+    </div>
+
+    <main class="feedbackForm">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Please leave us a feedback:</span>
+            <input id="message" name="message" class="form-control" aria-describedby="Message Area" aria-label="Message Area Input" required>
+        </div>
+        <button id="sendButton" type="button" class="btn btn-primary" onclick="pageRedirection()"><i class="fa-solid fa-check-double"></i> Submit</button>
+    </main>
+    <div class="modal-footer"></div>
+    <footer>
+        <div id="footerContainer"></div>
+    </footer>
+
+</section>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./script/namespace.js"></script>
+<script src="./script/main.js"></script>
+</body>
+</html>

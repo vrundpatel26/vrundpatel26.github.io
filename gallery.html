@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/style.css">
+</head>
+<body>
+<section class="body-section">
+    <header>
+
+    </header>
+
+
+    <h2 style="text-align:center">Community Events</h2></br>
+
+    <div class="rowEvents">
+        <div class="columnEvents">
+            <img src="./bgContent/event1.jpg" style="width:100%" onclick="openModalEvents();currentSlideEvents(1)" class="hover-shadowEvents cursorEvents">
+        </div>
+        <div class="columnEvents">
+            <img src="./bgContent/event2.JPG" style="width:100%" onclick="openModalEvents();currentSlideEvents(2)" class="hover-shadowEvents cursorEvents">
+        </div>
+        <div class="columnEvents">
+            <img src="./bgContent/event3.jpg" style="width:100%" onclick="openModalEvents();currentSlideEvents(3)" class="hover-shadowEvents cursorEvents">
+        </div>
+        <div class="columnEvents">
+            <img src="./bgContent/event4.jpg" style="width:100%" onclick="openModalEvents();currentSlideEvents(4)" class="hover-shadowEvents cursorEvents">
+        </div>
+    </div>
+
+    <div id="myModalEvents" class="modalEvents">
+        <span class="closeEvents cursorEvents" onclick="closeModalEvents()">&times;</span>
+        <div class="modal-contentEvents">
+
+            <div class="mySlidesEvents">
+                <div class="numbertextEvents">1 / 4</div>
+                <img src="./bgContent/event1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlidesEvents">
+                <div class="numbertextEvents">2 / 4</div>
+                <img src="./bgContent/event2.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlidesEvents">
+                <div class="numbertextEvents">3 / 4</div>
+                <img src="./bgContent/event3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlidesEvents">
+                <div class="numbertextEvents">4 / 4</div>
+                <img src="./bgContent/event4.jpg" style="width:100%">
+            </div>
+
+            <a class="prevEvents" onclick="plusSlidesEvents(-1)">&#10094;</a>
+            <a class="nextEvents" onclick="plusSlidesEvents(1)">&#10095;</a>
+
+            <div class="caption-containerEvents">
+                <p id="captionEvents"></p>
+            </div>
+
+
+            <div class="columnEvents">
+                <img class="demoEvents cursorEvents" src="./bgContent/event1.jpg" style="width:100%" onclick="currentSlideEvents(1)" alt="New Years Eve">
+            </div>
+            <div class="columnEvents">
+                <img class="demoEvents cursorEvents" src="./bgContent/event2.JPG" style="width:100%" onclick="currentSlideEvents(2)" alt="Community Workshop">
+            </div>
+            <div class="columnEvents">
+                <img class="demoEvents cursorEvents" src="./bgContent/event3.jpg" style="width:100%" onclick="currentSlideEvents(3)" alt="Community sports meet">
+            </div>
+            <div class="columnEvents">
+                <img class="demoEvents cursorEvents" src="./bgContent/event4.jpg" style="width:100%" onclick="currentSlideEvents(4)" alt="Community Get-together">
+            </div>
+        </div>
+    </div>
+
+
+<footer>
+    <div id="footerContainer"></div>
+</footer>
+</section>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script/main.js"></script>
+</body>
+
+</html>

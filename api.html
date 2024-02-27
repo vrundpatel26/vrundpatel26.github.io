@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Application</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/style.css">
+</head>
+<body class="ppbody1">
+<section class="body-section">
+    <header>
+
+    </header>
+
+    <form class="api-form">
+        <div>
+            <lable>Currency 1:</lable>
+            <input name="currency1" id="currency1" type="text">
+
+            <label>Currency 2:</label>
+            <input name="currency2" id="currency2" type="text">
+
+            <lable>Quantity:</lable>
+            <input name="amount" name="amount" type="text">
+
+            <button onclick="DisplayAPIApplicationPage()" name="convertButton" type="button" id="convertButton">Convert</button>
+
+        </div>
+    </form>
+    <div id="apiApplication">
+
+    </div>
+    <footer>
+        <div id="footerContainer"></div>
+    </footer>
+
+
+</section>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./script/main.js"></script>
+</body>
+</html>

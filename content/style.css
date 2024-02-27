@@ -1,0 +1,609 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.body-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1;
+    overflow: auto;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+}
+
+/* Header */
+header .navbar{
+    border-bottom: 1px solid #e7e7e7;
+    background: white;
+}
+header .navbar .navbar-brand{
+    max-width: 150px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+header .navbar-nav .nav-item .nav-link{
+    font-size: 14px;
+    color: #242424;
+}
+
+header .navbar-nav .nav-item .nav-link.active{
+    border-bottom: 1px solid #242424;
+    color: #222222;
+}
+
+#hero{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/*video*/
+#myVideo{
+    width: 100%;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1,.hero-content p{
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/*portfolio page*/
+.portfolio-section{
+    margin: 15px 0px;
+}
+
+#projects-container{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.portfolio-image{
+    display: flex;
+    align-items: center;
+}
+
+/*project cards*/
+.project-card{
+    width: 100%;
+    max-width: 300px;
+    min-width: 300px;
+    height: 400px;
+    margin: 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    padding: 15px;
+    background: #ffffff;
+    transition: 0.3s all ease-in-out;
+}
+
+.project-card:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 2px 2px 4px 4px  #e7e7e7;
+}
+
+.project-card h3{
+    margin-bottom: 15px;
+}
+
+.project-card p{
+    font-size: 14px;
+    color: #242424;
+    line-height: 1.5;
+    margin:0;
+}
+
+.project-card img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 150px;
+    height: 100%;
+    width: auto !important;
+    margin: auto;
+}
+
+.btn-primary{
+    border-radius: 100px !important;
+    font-size: 14px;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+}
+
+.all-pagebgimage{
+    position: relative;
+    height: 300px;
+}
+
+.all-pagebgimage img{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.all-pagebgimage .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.all-pagebgimage .title p{
+    color: #ffffff;
+    margin: 0px;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-weight: 600;
+}
+
+/* Footer */
+footer{
+    background: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer .nav-link {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer .navbar-expand-lg .navbar-collapse{
+    justify-content: center;
+}
+
+
+/*#myVideo {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*    z-index: -1;*/
+/*}*/
+
+/*service page*/
+.services-container {
+
+    margin: 50px auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+.service-img {
+    height: 175px;
+    width: 175px;
+}
+
+.service {
+    padding: 20px;
+}
+
+
+/*team page*/
+body#team-members {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.team-member {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.team-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+
+/*#dynamicNavbarContainer{*/
+/*    background: grey;*/
+/*}*/
+
+/*#contactForm {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+/*    gap: 20px;*/
+/*    max-width: 800px;*/
+/*    background: aliceblue;*/
+/*    margin: 50px auto;*/
+/*}*/
+
+
+#messageBox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/*img.service {*/
+/*    max-width: 800px;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    display: block;*/
+/*    margin: 50px auto;*/
+/*}*/
+
+
+/*.services-container {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    align-items: center;*/
+/*    flex-wrap: wrap;*/
+/*    margin: 20px 0;*/
+/*}*/
+
+/*.service {*/
+/*    flex: 0 1 30%;*/
+/*    text-align: center;*/
+/*    margin: 10px;*/
+/*}*/
+
+/*.service img {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    object-fit: cover;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+
+
+
+/*.main-content {*/
+/*    position: relative;*/
+/*    z-index: 1;*/
+/*    color: white;*/
+/*}*/
+
+body.ppbody1 {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+main.pp1 {
+    position: relative;
+    z-index: 1;
+    color: black;
+    padding: 20px;
+    overflow-y: auto;
+    height: calc(100vh - 40px);
+}
+
+/*section {*/
+/*    background-color: rgba(255, 255, 255, 0.8);*/
+/*    padding: 20px;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+body.tosBody {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+main.tosMain {
+    position: relative;
+    z-index: 1;
+    color: black;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+/*section.tosSection1 {*/
+/*    background-color: rgba(255, 255, 255, 0.8);*/
+/*    padding: 20px;*/
+/*    border-radius: 10px;*/
+/*    margin: 20px;*/
+/*}*/
+
+#events-container{
+    z-index: 1000;
+}
+
+.input-group-addon:first-child
+{
+    border-right: 0;
+}
+
+.input-group-addon
+{
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+}
+
+.input-group-addon .fa
+{
+    font-size: 18px;
+}
+
+.input-group .form-control
+{
+    position:relative;
+    z-index: 2;
+    float:left;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.input-group .form-control:last-child
+{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+.login
+{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: lightgrey;
+    border-radius: .3rem;
+}
+
+.login input
+{
+    background-color: white;
+    border-color: darkgrey;
+    border-radius: .4em;
+    width: 100%;
+}
+
+/*events page*/
+#events-container{
+    padding: 30px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+/*gallery page*/
+
+* {
+    box-sizing: border-box;
+}
+
+.rowEvents > .columnEvents {
+    padding: 0 8px;
+}
+
+.rowEvents:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columnEvents {
+    float: left;
+    width: 25%;
+}
+
+/* The Modal (background) */
+.modalEvents {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-contentEvents {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.closeEvents {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.closeEvents:hover,
+.closeEvents:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlidesEvents {
+    display: none;
+}
+
+.cursorEvents {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prevEvents,
+.nextEvents {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextEvents {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevEvents:hover,
+.nextEvents:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertextEvents {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img {
+    margin-bottom: -4px;
+}
+
+.caption-containerEvents {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demoEvents {
+    opacity: 0.6;
+}
+
+.activeEvents,
+.demoEvents:hover {
+    opacity: 1;
+}
+
+img.hover-shadowEvents {
+    transition: 0.3s;
+}
+
+.hover-shadowEvents:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.feedbackForm{
+    margin-top: 150px;
+}
+
+.api-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
